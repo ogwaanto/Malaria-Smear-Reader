@@ -74,35 +74,3 @@ Pipeline phases:
 ├── requirements.txt       (dependencies)
 └── README.md              (this file)
 ```
-
-## Quickstart
-1. Create a virtual environment and install dependencies:
-
-```powershell
-python -m venv .venv
-.\\.venv\\Scripts\\Activate.ps1
-pip install -r requirements.txt
-```
-
-2. Run extraction and preprocessing (example):
-
-```powershell
-python src\\extract_cells.py --input data\\raw --output data\\processed
-python src\\preprocess.py --input data\\processed --output data\\processed
-```
-
-3. Train models:
-
-```powershell
-python src\\train.py --data data\\processed --out models
-```
-
----
-
-If you'd like, I can also:
-
-- Add a CONTRIBUTING section
-- Add usage examples and model metrics in `notebooks/`
-- Create a `requirements.txt` or `environment.yml` (if missing)
-
-License: See the project `LICENSE` file.
